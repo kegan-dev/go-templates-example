@@ -1,0 +1,7 @@
+{{block "base" .}}
+    <h1>An example template</h1>
+    {{block "default" .}}{{/*Default content. This will show unless it is redefined in another template*/}}
+        <p>My default sidebar content</p>
+    {{end}}
+    {{template "content" .}}
+{{end}}
